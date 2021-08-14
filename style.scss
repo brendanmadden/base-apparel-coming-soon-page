@@ -79,12 +79,13 @@ body {
 
 .hero__img {
   margin-bottom: 6rem;
+  width: 100%;
 }
 
 .main {
   display: flex;
   flex-direction: column;
-  width: 100;
+  width: 100%;
   align-items: center;
   justify-content: center;
 }
@@ -153,6 +154,8 @@ body {
 
 @media screen and (min-width: 800px) {
   .container {
+    background: url(./images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
     grid-template-columns: 83rem 1fr;
     grid-template-areas:
       "header hero"
@@ -169,9 +172,5 @@ body {
 
   .main {
     grid-area: main;
-  }
-
-  .hero__img {
-    margin-bottom: 0;
   }
 }
