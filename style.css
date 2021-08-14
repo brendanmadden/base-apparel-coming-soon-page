@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Josefin Sans", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: linear-gradient(150.03deg, #ffffff 0%, #fff4f4 84.51%);
+  color: #ce9797;
+}
+
+.sr-only {
+  position: absolute;
+  -webkit-transform: translate(-999%, -999%);
+          transform: translate(-999%, -999%);
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  text-align: center;
+}
+
+.header {
+  height: 8.4rem;
+}
+
+.header__logo {
+  display: block;
+  width: 10rem;
+  margin-top: 3rem;
+  margin-left: 3rem;
+}
+
+.hero__img {
+  margin-bottom: 6rem;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main__heading {
+  font-size: 4rem;
+  font-weight: 300;
+  line-height: 4.2rem;
+  letter-spacing: 1.83rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  max-width: 12ch;
+}
+
+.main__heading--strong {
+  font-weight: 600;
+  color: #413939;
+}
+
+.main__text {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.2rem;
+  margin-bottom: 3rem;
+  width: 35ch;
+}
+
+.email__component {
+  position: relative;
+}
+
+.email-component__input {
+  height: 4.8rem;
+  width: 31.1rem;
+  border-radius: 1000rem;
+  padding: 0 2rem;
+  border: 1px solid rgba(206, 151, 151, 0.5);
+}
+
+.email-component__input::-webkit-input-placeholder {
+  color: #ce9797;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.8rem;
+  opacity: 50%;
+}
+
+.email-component__input:-ms-input-placeholder {
+  color: #ce9797;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.8rem;
+  opacity: 50%;
+}
+
+.email-component__input::-ms-input-placeholder {
+  color: #ce9797;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.8rem;
+  opacity: 50%;
+}
+
+.email-component__input::placeholder {
+  color: #ce9797;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.8rem;
+  opacity: 50%;
+}
+
+.btn {
+  height: 4.8rem;
+  width: 6.4rem;
+  border-radius: 1000rem;
+  border: none;
+  background: linear-gradient(135deg, #f8bfbf 0%, #ee8c8c 100%);
+  position: absolute;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-box-shadow: 0px 15px 20px 0px rgba(197, 109, 109, 0.25);
+          box-shadow: 0px 15px 20px 0px rgba(197, 109, 109, 0.25);
+}
+
+.btn:hover {
+  opacity: 50%;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 76.8rem) {
+  .container {
+    -ms-grid-columns: 1fr auto;
+        grid-template-columns: 1fr auto;
+        grid-template-areas: "header hero" "main hero";
+  }
+}
