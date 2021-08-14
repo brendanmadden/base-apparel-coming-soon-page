@@ -26,46 +26,51 @@
     </header>
     <section class="hero">
       <h2 class="hero__heading sr-only">Check out our latest styles</h2>
-      <img
-        class="hero__img hero__img--mobile"
-        src="./images/hero-mobile.jpg"
-        alt="woman modeling Base Apperal clothing"
-      />
+      <picture>
+        <source srcset="./images/hero-desktop.jpg" media="(min-width: 786px)" />
+        <img
+          class="hero__img hero__img--mobile"
+          src="./images/hero-mobile.jpg"
+          alt="woman modeling Base Apperal clothing"
+        />
+      </picture>
     </section>
     <main class="main">
-      <h2 class="main__heading">
-        We're <strong class="main__heading--strong">coming soon</strong>
-      </h2>
-      <p class="main__text">
-        Hello fellow shoppers! We're currently building our new fashion store.
-        Add your email below to stay up-to-date with announcements and our
-        launch deals.
-      </p>
+      <div class="main__content">
+        <h2 class="main__heading">
+          We're <strong class="main__heading--strong">coming soon</strong>
+        </h2>
+        <p class="main__text">
+          Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our
+          launch deals.
+        </p>
 
-      <div class="email-component">
-        <input
-          class="email-component__input"
-          placeholder="Email Address"
-          type="email"
-          name="email"
-          id="email"
-        />
-        <button class="btn" type="submit">
-          <svg
-            class="btn__svg"
-            xmlns="http://www.w3.org/2000/svg"
-            width="12"
-            height="20"
-          >
-            <path
-              class="btn__svg-path"
-              fill="none"
-              stroke="#FFF"
-              stroke-width="2"
-              d="M1 1l8.836 8.836L1 18.671"
-            />
-          </svg>
-        </button>
+        <div class="email-component">
+          <input
+            class="email-component__input"
+            placeholder="Email Address"
+            type="email"
+            name="email"
+            id="email"
+          />
+          <button class="btn" type="submit">
+            <svg
+              class="btn__svg"
+              xmlns="http://www.w3.org/2000/svg"
+              width="12"
+              height="20"
+            >
+              <path
+                class="btn__svg-path"
+                fill="none"
+                stroke="#FFF"
+                stroke-width="2"
+                d="M1 1l8.836 8.836L1 18.671"
+              />
+            </svg>
+          </button>
+        </div>
       </div>
     </main>
   </body>
