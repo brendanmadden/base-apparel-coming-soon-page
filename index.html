@@ -15,6 +15,7 @@
 
     <title>Frontend Mentor | Base Apparel coming soon page</title>
   </head>
+
   <body class="container">
     <header class="header">
       <h1 class="header__title sr-only">Base Apperal Coming Soon!</h1>
@@ -24,10 +25,14 @@
         alt="Base Apparel Logo"
       />
     </header>
+
     <section class="hero">
       <h2 class="hero__heading sr-only">Check out our latest styles</h2>
       <picture>
-        <source srcset="./images/hero-desktop.jpg" media="(min-width: 786px)" />
+        <source
+          srcset="./images/hero-desktop.jpg"
+          media="(min-width: 1000px)"
+        />
         <img
           class="hero__img hero__img--mobile"
           src="./images/hero-mobile.jpg"
@@ -35,6 +40,7 @@
         />
       </picture>
     </section>
+
     <main class="main">
       <div class="main__content">
         <h2 class="main__heading">
@@ -71,7 +77,10 @@
             </svg>
           </button>
         </div>
+        <!-- close email-component -->
       </div>
+      <!-- close main__content -->
     </main>
+    <!-- close container -->
   </body>
 </html>

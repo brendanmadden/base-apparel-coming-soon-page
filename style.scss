@@ -63,6 +63,7 @@ body {
 .container {
   display: grid;
   text-align: center;
+  max-width: 144rem;
   //   place-items: center;
 }
 
@@ -111,8 +112,12 @@ body {
   font-size: 1.4rem;
   font-weight: $fw-400;
   line-height: 2.2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
   width: 35ch;
+}
+
+.main__content {
+  margin-bottom: 8rem;
 }
 
 .email__component {
@@ -152,10 +157,38 @@ body {
   }
 }
 
-@media screen and (min-width: 786px) {
+@media screen and (min-width: 800px) {
+  .header__logo {
+    width: 15.8rem;
+  }
+
+  .main__heading {
+    font-size: 6.4rem;
+    line-height: 6.4rem;
+    letter-spacing: 1.732rem;
+  }
+
+  .main__text {
+    width: 45ch;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+  }
+
+  .email-component__input {
+    width: 44.5rem;
+    height: 5.6rem;
+  }
+
+  .btn {
+    width: 10rem;
+    height: 5.6rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
   .container {
     background: url(./images/bg-pattern-desktop.svg);
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     grid-template-columns: 1fr auto;
     grid-template-rows: auto 1fr;
     grid-template-areas:
@@ -165,7 +198,8 @@ body {
 
   .header {
     grid-area: header;
-    padding: 5rem 17.5rem;
+    padding: 5rem 15rem;
+    margin-top: 0rem;
 
     &__logo {
       width: 15.8rem;
@@ -181,11 +215,7 @@ body {
     grid-area: main;
     align-items: flex-start;
     text-align: left;
-    padding: 0 17.5rem;
-
-    &__content {
-      transform: translateY(-7%);
-    }
+    padding: 10rem 15.25rem;
 
     &__heading {
       font-size: 6.4rem;
@@ -197,6 +227,10 @@ body {
       width: 45ch;
       font-size: 1.6rem;
       line-height: 2.8rem;
+    }
+
+    &__content {
+      margin-bottom: 0rem;
     }
   }
 
