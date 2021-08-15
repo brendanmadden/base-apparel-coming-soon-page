@@ -48,6 +48,7 @@ body {
 .hero__img {
   margin-bottom: 6rem;
   width: 100%;
+  display: block;
 }
 
 .main {
